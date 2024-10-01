@@ -137,7 +137,7 @@ if __name__ == '__main__':
     #迭代的次数一共为3*50=150
     step = 1
     #参数配置
-    config = load_config('./config5.yaml')
+    config = load_config('./config.yaml')
     n_trials = config.n_trials
     save_path = os.path.join(config.results_save_path, 'Deepmodel')#上层路径results
     for train_index,test_index in skf.split(fv2,np.ones((sub,1))):#所有被试的交叉验证 第一次
