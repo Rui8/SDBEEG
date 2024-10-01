@@ -1,0 +1,32 @@
+mat_path: ../data/raw_mat
+
+results_save_path: ../results0916ecust
+
+n_trials: 1
+
+
+
+# hyperparameters for dl methods
+
+weight_decay_p:
+  min: 0.001
+  max: 0.001
+
+lr_p:
+  min: 0.0005
+  max: 0.0005
+
+alpha:
+  min: 0.00001
+  max: 0.00001
+
+batch_size: 64
+n_train_time: 5
+epochh: 1
+
+
+
+EEGNet:
+  brand: EEGNet
+  dropout: 0.25
+  results_save_name: EEGNet.csv
